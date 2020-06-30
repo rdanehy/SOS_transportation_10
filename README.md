@@ -9,7 +9,7 @@ git clone https://github.com/rdanehy/SOS_transportation_10.git
 cd SOS_transportation_10/pro_team/Src
 
 
-pip install -r requirments.txt
+pip3 install -r requirements.txt
 
 
 python app.py
