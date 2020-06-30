@@ -5,9 +5,9 @@ Descriptiion of Running Web Server:
 
 git clone https://github.com/rdanehy/SOS_transportation_10.git
 
-cd pro_team
 
-cd Src
+cd SOS_transportation_10/pro_team/Src
+
 
 pip install -r requirments.txt
 
