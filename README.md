@@ -12,4 +12,4 @@ cd SOS_transportation_10/pro_team/Src
 pip install -r requirments.txt
 
 
-run app.py
+python app.py
