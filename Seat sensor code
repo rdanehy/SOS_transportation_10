@@ -1,1 +1,23 @@
+/*Seat Sensor
+ * 
+ */
+int Pin1 = 0;
+int BLUE = 8;
+void setup() {
+  Serial.begin(9600);
+  pinMode(BLUE,OUTPUT);
+  
+}
 
+void loop() {
+  int sensorval = analogRead(Pin1);
+  Serial.println(sensorval);
+  
+  if (sensorval > 90){
+    digitalWrite(BLUE,HIGH);
+    delay(100);
+    }
+  else;
+    digitalWrite(BLUE,LOW);
+  delay(100);
+  }
