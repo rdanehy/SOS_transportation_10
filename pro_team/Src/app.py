@@ -10,5 +10,20 @@ def home():
     return render_template('index.html')
 
 
+@app.route('/home')
+def index():
+    return render_template('index.html')
+
+
+@app.route('/generic')
+def generic():
+    return render_template('generic.html')
+
+
+@app.route('/elements')
+def elements():
+    return render_template('elements.html')
+
+
 if __name__ == "__main__":  # on running python app.py
     app.run()  # run the flask app
