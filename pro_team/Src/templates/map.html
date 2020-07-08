@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="./static/map.css" type="text/css">
     <style>
       .map {
         height: 400px;
@@ -14,22 +15,10 @@
   <body>
     <h2>My Map</h2>
     <div id="map" class="map"></div>
-    <script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center:ol.proj.transform([-86.14, 39.79], 'EPSG:4326','EPSG:3857'),
-          zoom: 12,
-          minZoom: 10,
-          maxZoom: 18
-
-        })
-      });
-    </script>
+    <div id="popup" class="ol-popup">
+     <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+     <div id="popup-content"></div>
+    </div>
+    <script type="text/javascript" src="./static/map.js"></script>
   </body>
 </html>
