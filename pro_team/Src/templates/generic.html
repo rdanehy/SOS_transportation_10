@@ -10,6 +10,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./static/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    	<link rel="stylesheet" href="./static/map.css" type="text/css">
+    	<style>
+		  .map {
+			height: 800px;
+			width: 95%;
+		  }
+		</style>
+    	<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+
 	</head>
 	<body class="subpage">
 
@@ -47,7 +57,13 @@
 
 				</div>
 			</section>
-
+			<h2>My Map</h2>
+				<div id="map" class="map"></div>
+				<div id="popup" class="ol-popup">
+				 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+				 <div id="popup-content"></div>
+				</div>
+				<script type="text/javascript" src="./static/map.js"></script>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -82,7 +98,7 @@
 
 		<!-- Scripts -->
 			<script src="./static/jquery.min.js"></script>
-			<script src="./static/jskel.min.js"></script>
+			<script src="./static/skel.min.js"></script>
 			<script src="./static/util.js"></script>
 			<script src="./static/main.js"></script>
 

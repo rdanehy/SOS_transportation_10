@@ -7,7 +7,7 @@ app = Flask(__name__)  # create an app instance
 
 @app.route('/')  # at the end point /
 def home():
-    return render_template('map.html')
+    return render_template('index.html')
 
 
 @app.route('/home')
