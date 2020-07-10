@@ -15,7 +15,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/generic')
+@app.route('/track_my_bus')
 def generic():
     return render_template('generic.html')
 
