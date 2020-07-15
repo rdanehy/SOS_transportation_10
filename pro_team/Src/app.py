@@ -25,5 +25,10 @@ def elements():
     return render_template('elements.html')
 
 
+@app.route('/vision')
+def vision():
+    return render_template('vision.html')
+
+
 if __name__ == "__main__":  # on running python app.py
     app.run()  # run the flask app
