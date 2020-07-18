@@ -20,6 +20,11 @@ def generic():
     return render_template('generic.html')
 
 
+@app.route('/product')
+def product():
+    return render_template('product.html')
+
+
 @app.route('/elements')
 def elements():
     return render_template('elements.html')

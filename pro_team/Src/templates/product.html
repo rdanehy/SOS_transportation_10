@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>Vision</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><img src=" ./static/images/logo.png"></a>
+					<nav id="nav">
+						<a href="home">Home</a>
+						<a href="track_my_bus">Track My Bus</a>
+						<a href="product">Product</a>
+                        <a href="vision">Vision</a>
+						<a href="elements">About</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>The SoftStat </h2>
+						<p>Providing Transparency in a Post Covid-19 World</p>
+					</header>
+					<body>
+					<p style=" font-size: 22pt; line-height: 2.0;">The SoftStat product is a series of sensors deployed onto a given bus that then allows anonymous tracking of social distancing that is taking place on a bus in real time. The data gathered by the seat sensors are then sent to a web application that updates the bus’s seating chart in real time. Using data visualization we are then able to show any rider or potential rider what the current levels of occupancy on the bus are. This allows users to make decisions on whether or not they are comfortable with the current social distancing practices that are taking place on any bus in real time. This technology promises to bring a level of transparency and information to the public that will help alleviate the worries and concerns of essential workers as cities work to reopen the economies.</p>
+					<p style="text-align: center"><strong>How it Works</strong></p>
+					<div style="text-align: center; text-height: 1.0">
+						<br>
+						<img src="./static/images/strips.jpg" height = "50%" width = "50%">
+						<br>
+						<br>
+						<p style=" font-size: 22pt; line-height: 2.0; text-align: left; margin-left: 3.0cm; margin-right:3cm;">Clayton, one of our engineers purchased a sheet of velostat and copper foil to construct a pressure sensor strip to use as a seat sensor with velostat, copper foil and an arduino uno microcontroller. The final design is 3 1”x11” strips of velostat stacked on top of each other with 2 0.5”x11” copper foil strips on either side of the strips, with wires soldered on either side.
+					</p>
+						<div style="text-align: center; text-height: 1.0">
+						<br>
+						<img src="./static/images/Seat2.jpg" height = "50%" width = "50%">
+						<br>
+							<br>
+							<p style=" font-size: 22pt; line-height: 2.0; text-align: left; margin-left: 3.0cm; margin-right:3cm;">
+								An example of the Velostat implemented into a seat. Velostat is the black strip shown in the photo.
+							</p>
+					</div>
+					</div>
+					<div style="text-align: center; text-height: 1.0">
+						<br>
+						<br>
+						<br>
+						<img src="./static/images/Seat1.jpg" height = "600" width = "600">
+						<br>
+						<br>
+						<p style=" font-size: 22pt; line-height: 2.0; text-align: left; margin-left: 3.0cm; margin-right:3cm;">
+						Before the wire goes in the arduino, he put a diode to make sure the current was traveling in a singular direction into the arduino for consistent readings. The arduino reads the voltages going through the sensor with a voltage threshold to send a message if somebody is using said seat. Once the person sits in the seat,the threshold is broken and the arduino sends a signal to the website application and then reads that signal knowing which seat is now taken, coloring in that seat. Once the seat is empty again, a closing signal is sent to the website to take the color out of the seat to show that the seat is free. These signals can be a simple number going 1 through however many seats when the threshold is broken, and sending a zero when the seat is being unused.
+						</p>
+					</div>
+					<div style="text-align: center; text-height: 1.0">
+						<br>
+						<img src="./static/images/Seat3.jpg" height = "50%" width = "50%">
+						<br>
+						<br>
+						<p style=" font-size: 22pt; line-height: 2.0; text-align: left; margin-left: 3.0cm; margin-right:3cm;">
+						Above is an Ardunio Uno that measure the threshold in order to determine if someone is sitting or not. One Ardunio Uno can measure multiple seats at once.
+						</p>
+					</div>
+
+					<hr class="major" />
+
+					<!-- Content -->
+
+											<ul class="icons">
+												<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+												<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+												<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+											</ul>
+
+										</div>
+
+		<!-- Scripts -->
+			<script src="./static/jquery.min.js"></script>
+			<script src="./static/skel.min.js"></script>
+			<script src="./static/util.js"></script>
+			<script src="./static/main.js"></script>
+
+	</body>
+</html>

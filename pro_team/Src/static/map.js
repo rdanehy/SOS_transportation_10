@@ -48,7 +48,7 @@ var layer = new ol.layer.Vector({
   map.on('singleclick', function (event) {
      if (map.hasFeatureAtPixel(event.pixel) === true) {
          var coordinate = event.coordinate;
-         content.innerHTML ='Bus ID: 121<br/>Occupancy: 4<br/> <img src="./static/images/bus_schematic.png " height=" 300" width=" 900">'
+         content.innerHTML ='Bus ID: 121<br/>Occupancy: 5<br/>Route: New York Avenue - Jordan St <img src="./static/images/bus_schematic.png " height=" 300" width=" 900">'
          overlay.setPosition(coordinate);
      } else {
          overlay.setPosition(undefined);
