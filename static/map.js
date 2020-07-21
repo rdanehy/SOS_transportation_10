@@ -1,10 +1,9 @@
-
 var map = new ol.Map({
         target: 'map',
         layers: [
           new ol.layer.Tile({
             source: new ol.source.OSM()
-          })
+          }),
         ],
         view: new ol.View({
           center:ol.proj.transform([-86.14, 39.79], 'EPSG:4326','EPSG:3857'),
@@ -15,16 +14,50 @@ var map = new ol.Map({
         })
       });
 
+
 var layer = new ol.layer.Vector({
      source: new ol.source.Vector({
          features: [
              new ol.Feature({
-                 geometry: new ol.geom.Point(ol.proj.fromLonLat([-86.1581, 39.7894]))
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([-86.1581, 39.7894])), color: 'green'
              })
          ]
         })
  });
- map.addLayer(layer);
+var layer2= new ol.layer.Vector({
+     source: new ol.source.Vector({
+         features: [
+             new ol.Feature({
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([-86.1381, 39.7594]))
+             })
+         ]
+        })
+ });
+
+var layer3= new ol.layer.Vector({
+     source: new ol.source.Vector({
+         features: [
+             new ol.Feature({
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([-86.1581, 39.7694]))
+             })
+         ]
+        })
+ });
+
+var layer4= new ol.layer.Vector({
+     source: new ol.source.Vector({
+         features: [
+             new ol.Feature({
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([-86.1381, 39.8194])), color: 'green'
+})
+         ]
+        })
+ });
+
+map.addLayer(layer);
+map.addLayer(layer2);
+map.addLayer(layer3);
+map.addLayer(layer4);
 
  var container = document.getElementById('popup');
  var content = document.getElementById('popup-content');
