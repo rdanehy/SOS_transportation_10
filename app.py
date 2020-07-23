@@ -35,5 +35,10 @@ def vision():
     return render_template('vision.html')
 
 
+@app.route('/credits')
+def credits():
+    return render_template('credits.html')
+
+
 if __name__ == "__main__":  # on running python app.py
     app.run()  # run the flask app
