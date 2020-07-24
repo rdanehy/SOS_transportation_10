@@ -10,7 +10,7 @@ For more information check out our current running [website](https://softstat.he
 Current running [website](https://softstat.herokuapp.com/home)
 
 ## Description of Running Web Server using Flask:
-Place each of the following lines in the command line/terminal seperate
+Place each of the following lines in the command line/terminal. Using a virtual environment is highly recommended, but not needed. If you need to download virtualenv please proceed to this [link](https://pypi.org/project/virtualenv/)
 
 git clone https://github.com/rdanehy/SOS_transportation_10.git
 
